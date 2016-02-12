@@ -1,0 +1,12 @@
+Package: MSSQ
+Type: Package
+Title: Multi-Sample Poisson Model for Species Abundance Quantification
+Version: 0.1.0
+Date: 2016-02-11
+Author: Eric Z Chen
+Maintainer: Eric Z Chen <chvlyl@gmail.com>
+Description: Multi-Sample Poisson Model for Species Abundance Quantification
+    based on the shotgun metagenomic data
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.1
