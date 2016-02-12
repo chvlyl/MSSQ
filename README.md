@@ -16,16 +16,12 @@ library(MSSQ)
 ```
 
 ## Basic Usage
-### Modified Wilcoxon rank sum test (ZIW) for zero-inflated data
 ```r
-x <- c(rep(0,5),rlnorm(20, meanlog = 0, sdlog = 1))
-y <- c(rep(0,10),rlnorm(20, meanlog = 2, sdlog = 1))
-ziw(x, y, perm = FALSE)
+est <- poisson_estimate_parameter_LS(X=X,tc=tc,l=l,N=N,S=S,
+                                  species.names=species.names,
+                                  estimate.phi=TRUE)
 ```
-If you want to use permutations to generate pvalues, you can set perm to TRUE
-```r
-ziw(x, y, perm = TRUE)
-```
+
 
 
 ## Citation
