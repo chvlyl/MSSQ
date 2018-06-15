@@ -3,8 +3,9 @@
 #' @param X matrix the input count table (the read counts for each marker)
 #' @param tc vector total counts for each sample
 #' @param l vector the marker length.
-#' @param N
-#' @param S
+#' @param N scalar the total number of samples
+#' @param S scalar the total number of species
+#' @param species.names: vector the species name for each marker
 #' @return abu,theta,phi,converge
 #' @export
 #' @examples
