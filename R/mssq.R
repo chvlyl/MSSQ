@@ -1,12 +1,10 @@
 #' Fit zero-inflated beta regression with random effects
 #'
-#' @param logistic.cov the covariates in logistic component
-#' @param beta.cov the covariates in beta component
-#' @param Y the response variable in the regression model
-#' @param subject.ind the variable for subjects
-#' @param time.ind the variable for time points
-#' @param quad.n Gaussian quadrature points
-#' @param verbose print the fitting process
+#' @param X matrix the input count table (the read counts for each marker)
+#' @param tc vector total counts for each sample
+#' @param l vector the marker length.
+#' @param N
+#' @param S
 #' @return abu,theta,phi,converge
 #' @export
 #' @examples
