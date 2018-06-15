@@ -28,7 +28,7 @@ est <- poisson_estimate_parameter_LS(X=X,tc=tc,l=l,N=N,S=S,
                                   estimate.phi=TRUE)
 ```
 
-Before using MSSQ, you need to prepare your data into the following format (I parsed the MetaPhlAn output, i.e the read counts per marker, to get such table).
+Before using MSSQ, you need to prepare your data into the following format (I parsed the MetaPhlAn output, i.e the read counts per marker, to get such table). Rows are samples, columns are markers.
 <p align="center">
   <img src="images/table.png" width="500"/>
 </p>
