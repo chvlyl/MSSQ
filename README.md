@@ -35,9 +35,15 @@ Before using MSSQ, you need to prepare your data into the following format (I pa
 
 X: is a matrix, which is just the above table. Note that each value is the read counts aligned to each marker.
 
-tc: is a vector, which is the total counts for each sample or the total reads aligned to all the markers. The difference is that the former one including those unaligned read counts. I experimented both and it seems to me the latter one is better. The length of tc should be the same as the nrow of X.
+tc: is a vector, which is the total counts for each sample or the total reads aligned to all the markers. The difference is that the former one including those unaligned read counts. I experimented both and it seems to me the latter one is better. The length of tc should be as the same as the nrow of X.
 
-l: is a vector, which is the length of each marker. The length of l should be the same as the ncol of X. Note that the l should be normalized (for example, l/1000000). Otherwise, ϕ_ij will be very small. 
+l: is a vector, which is the length of each marker. The length of l should be as the same as the ncol of X. Note that the l should be normalized (for example, l/1000000). Otherwise, ϕ_ij will be very small. 
+
+N: is a scalar, which is the total number of samples
+
+S: is a scalar, which is the total number of species
+
+species.names: is a vector, which is the species name for each marker. The length should be as the same as the ncol of X.
 
 ## Model Details
 Consider a metagenomic study with N samples. After the sequencing reads are aligned to
