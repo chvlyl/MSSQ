@@ -8,7 +8,7 @@ In order to account for such differences in read counts, we propose a multi-samp
 
 
 <p align="center">
-  <img src="images/marker_effect.png" width="300"/>
+  <img src="images/marker_effect.png" width="400"/>
 </p>
 Marker effects in the shotgun metagenomic data for four bacterial species. The raw sequencing reads were first aligned to the taxonomic markers and then normalized as the number of aligned reads for each marker divided by marker length and total number of aligned reads for each sample. The normalized data was then clustered and showed in heatmap. The rows are samples and columns are taxonomic markers from MetaPhlAn.
 
@@ -29,6 +29,12 @@ est <- poisson_estimate_parameter_LS(X=X,tc=tc,l=l,N=N,S=S,
 ```
 
 Here X is the count data, tc is the total counts for each sample, l is the marker gene length.
+
+Before using MSSQ, you need to prepare your data into the following format (I parsed the MetaPhlAn output, i.e the read counts per marker, to get such table).
+<p align="center">
+  <img src="https://github.com/chvlyl/PhD_Dissertation/blob/master/Figure/F32_table.pdf" width="300"/>
+</p>
+
 
 ## Model Details
 Consider a metagenomic study with N samples. After the sequencing reads are aligned to
