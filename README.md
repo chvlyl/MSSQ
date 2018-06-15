@@ -22,6 +22,19 @@ est <- poisson_estimate_parameter_LS(X=X,tc=tc,l=l,N=N,S=S,
                                   estimate.phi=TRUE)
 ```
 
+## Details
+Consider a metagenomic study with N samples. After the sequencing reads are aligned to
+sets of clade-specific marker genes, the data can be summarized as a large table of counts, where X_ijk is the count data of sequencing reads for sample i (i = 1, 2, …, n), species j (j = 1, 2, …, p) and marker k (k = 1, 2, …, m_j). We model the count data for all species and all samples together and assume that the count X_ijk is generated from the following Poisson model,
+
+<p align="center">
+  <img src="images/eqn1.png" width="350"/>
+</p>
+
+<p align="center">
+  <img src="images/eqn2.png" width="350"/>
+</p>
+
+
 
 
 ## Citation
