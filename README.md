@@ -32,7 +32,7 @@ Here X is the count data, tc is the total counts for each sample, l is the marke
 
 Before using MSSQ, you need to prepare your data into the following format (I parsed the MetaPhlAn output, i.e the read counts per marker, to get such table).
 <p align="center">
-  <img src="images/table.png" width="300"/>
+  <img src="images/table.png" width="500"/>
 </p>
 
 
