@@ -45,6 +45,20 @@ S: is a scalar, which is the total number of species.
 
 species.names: is a vector, which is the species name for each marker. The length should be as the same as the ncol of X.
 
+
+The output est is a list: list(abu=theta*100,theta=theta,phi=phi,converge=converge)
+
+abu: the estimated abundance, rescaled to [0,100]
+
+theta: the estimated theta values
+
+phi: the estimated phi values
+
+converge: if the model converges or not. 
+
+
+
+
 ## Model Details
 Consider a metagenomic study with N samples. After the sequencing reads are aligned to sets of clade-specific marker genes, the data can be summarized as a large table of counts, where X_ijk is the count data of sequencing reads for sample i (i = 1, 2, …, n), species j (j = 1, 2, …, p) and marker k (k = 1, 2, …, m_j). We model the count data for all species and all samples together and assume that the count X_ijk is generated from the following Poisson model,
 
