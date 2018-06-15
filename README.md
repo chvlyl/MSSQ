@@ -7,6 +7,12 @@ The human microbiome, which includes the collective microbes residing in or on t
 In order to account for such differences in read counts, we propose a multi-sample Poisson model to quantify microbial abundances based on read counts that are assigned to species-specific taxonomic markers. Our model takes into account the marker-specific effects when normalizing the sequencing count data in order to obtain more accurate quantification of the species abundances. Compared to currently available methods on simulated data and real data sets, our method has demonstrated an improved accuracy in bacterial abundance quantification, which leads to more biologically interesting results from downstream data analysis.
 
 
+<p align="center">
+  <img src="images/marker_effect.png" width="300"/>
+</p>
+Marker effects in the shotgun metagenomic data for four bacterial species. The raw sequencing reads were first aligned to the taxonomic markers and then normalized as the number of aligned reads for each marker divided by marker length and total number of aligned reads for each sample. The normalized data was then clustered and showed in heatmap. The rows are samples and columns are taxonomic markers from MetaPhlAn.
+
+
 ## Installation
 You can install our MSSQ package from Github
 ```r
