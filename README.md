@@ -69,3 +69,6 @@ Estimates θ and ϕ can be obtained iteratively.
 
 ## Citation
 Eric Z. Chen, Frederic D. Bushman and Hongzhe Li (2017). A Model-Based Approach For Species Abundance Quantification Based On Shotgun Metagenomic Data. [Stat Biosci](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5612490/pdf/nihms792800.pdf)
+
+## Problem
+1. If the input table has too many zeros, the MSSQ may not converge. I would suggest users to filter out low count species and samples before fitting MSSQ. 
